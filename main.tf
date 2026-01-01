@@ -1,6 +1,6 @@
 # Configure the AWS provider
 provider "aws" {
-  region = "eu-west-1"
+  region = "ap-south-1"
 }
 
 # Create a S3 bucket
@@ -14,4 +14,5 @@ resource "aws_s3_bucket" "terraform_state" {
   lifecycle {
     prevent_destroy = true
   }
+
 }
